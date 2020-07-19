@@ -1,0 +1,12 @@
+imezone: Europe/Paris
+crons:
+      cron1:
+              # every day at 7h00 AM
+              spec: 0 7 * * *
+              cmd: |
+                    php bin/console app:csv-command       
+      cron2:
+              # every day at 19h00 AM
+              spec: 02 21 * * *
+              cmd: |
+                    php bin/console app:csv-command
